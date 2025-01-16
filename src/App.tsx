@@ -8,7 +8,7 @@ import Laurels from './container/Laurels/Laurels'
 import Gallery from './container/Gallery/Gallery'
 import FindUs from './container/Findus/FindUs'
 import Footer from './container/Footer/Footer'
-import './App.css'
+import './App.module.scss'
 
 const App = () => (
   <div>
