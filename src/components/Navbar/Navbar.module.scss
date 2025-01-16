@@ -1,0 +1,70 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  background: var(--color-black);
+  padding: 1rem 2rem;
+
+  font-family: var(--font-alt);
+  color: var(--color-white);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 16px;
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+      width: 150px;
+    }
+  }
+
+  .links {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+    li:hover {
+      cursor: pointer;
+      color: var(--color-grey);
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+      transition: all 0.5s ease;
+
+      &:hover {
+        border-bottom: 1px solid var(--color-golden);
+      }
+    }
+
+    .divider {
+      width: 1px;
+      height: 30px;
+      background: var(--color-grey);
+    }
+  }
+
+  .navbarSmallScreens {
+    outline: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: var(--color-white);
+  }
+}
