@@ -20,7 +20,7 @@
     align-items: center;
 
     img {
-      width: 150px;
+      width: 9.375rem;
     }
   }
 
@@ -61,10 +61,86 @@
   .navbarSmallScreens {
     outline: 0;
     border: none;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background: transparent;
     color: var(--color-white);
+
+    .navbarSmallScreensContent {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      z-index: 9;
+      background-color: var(--color-black);
+      width: 100vw;
+      height: 100vh;
+      transition: 0.5s all ease;
+
+      .navbarSmallScreensClose {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        color: var(--color-golden);
+        cursor: pointer;
+      }
+
+      .linksSmallScreens {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+        height: 100%;
+
+        li {
+          list-style: none;
+          color: var(--color-golden);
+          font-size: 2rem;
+          text-align: center;
+          font-family: var(--font-base);
+          cursor: pointer;
+
+          &:hover {
+            color: var(--color-white);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .logo img {
+    width: 13.125rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .navbar {
+    .links {
+      display: none;
+    }
+
+    .navbarSmallScreens {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navbar {
+    padding: 1rem;
+
+    .actions {
+      display: none;
+    }
+
+    .logo img {
+      width: 6.875rem;
+    }
   }
 }
