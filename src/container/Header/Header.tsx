@@ -1,4 +1,4 @@
-import { SubHeading } from '../../components'
+import SubHeading from '../../components/SubHeading/SubHeading'
 import images from '../../constants/images'
 import baseStyles from '../../App.module.scss'
 import styles from './Header.module.scss'
