@@ -1,13 +1,13 @@
 import Navbar from './components/Navbar/Navbar'
 import Header from './container/Header/Header'
-import './App.module.scss'
+import AboutUs from './container/AboutUs/AboutUs'
 
 const App = () => (
   <div>
     <Navbar />
     <Header />
-    {/* <AboutUs />
-    <SpecialMenu />
+    <AboutUs />
+    {/* <SpecialMenu />
     <Chef />
     <Intro />
     <Laurels />
