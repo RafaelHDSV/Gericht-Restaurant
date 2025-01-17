@@ -1,0 +1,15 @@
+.header {
+  background: var(--color-black);
+  height: calc(100vh - 4.685rem);
+  min-height: auto;
+
+  .h1 {
+    font-family: var(--font-base);
+    font-size: 5.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    line-height: 7.3125rem;
+    color: var(--color-golden);
+    margin: 1rem 0 2rem 0;
+  }
+}
