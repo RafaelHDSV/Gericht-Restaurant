@@ -1,0 +1,17 @@
+.footerOverlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+
+  .overlayBlack {
+    height: 25%;
+    background: var(--color-black);
+  }
+
+  .overlayImage {
+    height: 75%;
+  }
+}
