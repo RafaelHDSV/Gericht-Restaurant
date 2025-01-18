@@ -1,0 +1,139 @@
+.gallery {
+  display: flex;
+  flex-direction: row;
+  background: var(--color-black);
+  padding: 4rem 0 4rem 6rem;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    min-width: 500px;
+    padding-right: 2rem;
+
+    button {
+      margin-top: 1rem;
+    }
+  }
+
+  .galleryImages {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    max-width: 50%;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      width: max-content;
+      overflow-x: scroll;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .imagesCard {
+        position: relative;
+        min-width: 301px;
+        height: 447px;
+        margin-right: 2rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          opacity: 1;
+          transition: 0.5s all ease;
+          cursor: pointer;
+        }
+
+        &:hover img {
+          opacity: 0.35;
+        }
+
+        &:hover .instagramIcon {
+          opacity: 1;
+        }
+
+        .instagramIcon {
+          position: absolute;
+          color: #fff;
+          font-size: 2rem;
+          opacity: 0;
+          transition: 0.5s all ease;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .imagesArrow {
+      position: absolute;
+      bottom: 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+      width: 100%;
+
+      .arrowIcon {
+        background: var(--color-black);
+        color: var(--color-golden);
+        border-radius: 5px;
+        font-size: 2rem;
+        cursor: pointer;
+
+        &:hover {
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 2000px) {
+    .content {
+      min-width: 1000px !important;
+      padding-right: 4rem;
+    }
+
+    .imagesCard {
+      min-width: 400px;
+      height: 550px;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .gallery {
+    flex-direction: column !important;
+  }
+
+  .galleryImages {
+    max-width: 100% !important;
+    margin: 5rem 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .gallery {
+    padding: 4rem 0 4rem 4rem !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .gallery {
+    padding: 4rem 0 4rem 2rem !important;
+
+    .content {
+      min-width: 100%;
+    }
+
+    .imagesCard {
+      min-width: 240px;
+      height: 320px;
+    }
+  }
+}
