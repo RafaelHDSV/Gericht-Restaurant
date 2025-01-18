@@ -1,0 +1,32 @@
+.awardCard {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 14.375rem;
+  margin: 1rem;
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .awardCard {
+    min-width: 24.375rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .awardCard {
+    min-width: 100%;
+    margin: 1rem 0;
+  }
+}
