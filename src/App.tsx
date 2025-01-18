@@ -3,6 +3,7 @@ import Header from './container/Header/Header'
 import AboutUs from './container/AboutUs/AboutUs'
 import SpecialMenu from './container/Menu/SpecialMenu'
 import Chef from './container/Chef/Chef'
+import Intro from './container/Intro/Intro'
 
 const App = () => (
   <div>
@@ -11,8 +12,8 @@ const App = () => (
     <AboutUs />
     <SpecialMenu />
     <Chef />
-    {/*<Intro />
-    <Laurels />
+    <Intro />
+    {/*<Laurels />
     <Gallery />
     <FindUs />
     <Footer /> */}
