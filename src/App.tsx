@@ -7,6 +7,7 @@ import Intro from './container/Intro/Intro'
 import Laurels from './container/Laurels/Laurels'
 import Gallery from './container/Gallery/Gallery'
 import FindUs from './container/Findus/FindUs'
+import Footer from './container/Footer/Footer'
 
 const App = () => (
   <div>
@@ -19,7 +20,7 @@ const App = () => (
     <Laurels />
     <Gallery />
     <FindUs />
-    {/*<Footer /> */}
+    <Footer />
   </div>
 )
 
