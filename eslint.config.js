@@ -24,5 +24,9 @@ export default tseslint.config(
         { allowConstantExport: true },
       ],
     },
+    sassOptions: {
+      includePaths: [path.join(__dirname, 'styles')],
+    },
   },
 )
+
