@@ -1,0 +1,85 @@
+.specialMenu {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-black);
+
+  .title {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem 0;
+    width: 100%;
+
+    .winesAndBeers,
+    .cocktails {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      width: 100%;
+    }
+
+    .menuTitle {
+      font-family: var(--font-base);
+      font-weight: 600;
+      font-size: 45px;
+      line-height: 58.5px;
+      letter-spacing: 0.04em;
+      color: var(--color-white);
+    }
+
+    .menuItem {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem 0;
+      width: 100%;
+    }
+
+    .image {
+      width: 410px;
+      margin: 0 2rem;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 2000px) {
+    .image {
+      width: 650px;
+
+      img {
+        height: 920px;
+      }
+    }
+  }
+  @media screen and (max-width: 1150px) {
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .image {
+      margin: 3rem 0;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .image {
+      width: 100%;
+    }
+
+    .menuTitle {
+      font-size: 35px;
+      line-height: 48px;
+    }
+  }
+}

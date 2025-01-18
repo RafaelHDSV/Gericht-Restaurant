@@ -1,11 +1,45 @@
-import React from 'react';
+import images from '../../constants/images'
+import data from '../../constants/data'
+import SubHeading from '../../components/SubHeading/SubHeading'
+import MenuItem from '../../components/Menuitem/MenuItem'
+import baseStyles from '../../App.module.scss'
+import styles from './SpecialMenu.module.scss'
 
-import './SpecialMenu.css';
+export default function SpecialMenu() {
+  return (
+    <div id='menu' className={`${styles.specialMenu} ${baseStyles.flex__center} ${baseStyles.section__padding}`}>
+      <div className={styles.title}>
+        <SubHeading>Menu that fits you pallate</SubHeading>
+        <h1 className={baseStyles.headtext__cormorant}>Today's Special</h1>
+      </div>
 
-const SpecialMenu = () => (
-  <div>
-    SpecialMenu
-  </div>
-);
+      <div className={styles.menu}>
+        <div className={`${styles.winesAndBeers} ${baseStyles.flex__center}`}>
+          <p className={styles.menuTitle}>Wine & Beer</p>
+          <div className={styles.menuItem}>
+            {data.wines.map((wineAndBeer, index) => (
+              <MenuItem key={index} title={wineAndBeer.title} tags={wineAndBeer.tags} price={wineAndBeer.price} />
+            ))}
+          </div>
+        </div>
 
-export default SpecialMenu;
+        <div className={styles.image}>
+          <img src={images.menu} alt='menu' />
+        </div>
+
+        <div className={styles.cocktails}>
+          <p className={styles.menuTitle}>Cocktails</p>
+          <div className={styles.menuItem}>
+            {data.cocktails.map((cocktail, index) => (
+              <MenuItem key={index} title={cocktail.title} tags={cocktail.tags} price={cocktail.price} />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div style={{ marginTop: '1rem' }}>
+        <button className={baseStyles.custom__button}>View More</button>
+      </div>
+    </div>
+  )
+}
