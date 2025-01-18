@@ -13,3 +13,15 @@
     margin: 1rem 0 2rem 0;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .header {
+    height: 100%;
+    padding: 2rem;
+  }
+
+  .h1 {
+    font-size: 3.125rem !important;
+    line-height: 4.0625rem !important;
+  }
+}
