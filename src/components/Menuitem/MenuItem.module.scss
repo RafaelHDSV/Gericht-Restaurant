@@ -1,3 +1,5 @@
+@import '../../App.module.scss';
+
 .menuItem {
   display: flex;
   flex-direction: column;
@@ -11,6 +13,11 @@
 
     .name {
       flex: 1;
+
+      p {
+        @extend %p__cormorant;
+        color: var(--color-golden);
+      }
     }
 
     .dash {
@@ -24,11 +31,20 @@
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
+
+      p {
+        @extend %p__cormorant;
+      }
     }
   }
 
   .subInfo {
     margin-top: 0.2rem;
     width: 100%;
+
+    p {
+      @extend %p__opensans;
+      color: var(--color-grey);
+    }
   }
 }
