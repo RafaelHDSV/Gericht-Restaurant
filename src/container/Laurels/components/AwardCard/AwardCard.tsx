@@ -1,4 +1,3 @@
-import baseStyles from '../../../../App.module.scss'
 import styles from './AwardsCard.module.scss'
 
 interface IAwardCardProps {
@@ -15,10 +14,8 @@ export default function AwardCard({ award }: IAwardCardProps) {
       <img src={award.imgUrl} alt='award.imgUrl' />
 
       <div className={styles.content}>
-        <p className={baseStyles.p__cormorant} style={{ color: '#DCCA87' }}>
-          {award.title}
-        </p>
-        <p className={baseStyles.p__cormorant}>{award.subtitle}</p>
+        <p style={{ color: '#DCCA87' }}>{award.title}</p>
+        <p>{award.subtitle}</p>
       </div>
     </div>
   )
