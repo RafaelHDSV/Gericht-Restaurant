@@ -1,16 +1,35 @@
-.header {
-  background: var(--color-black);
-  height: calc(100vh - 4.685rem);
-  min-height: auto;
+@import '../../App.module.scss';
 
-  .h1 {
-    font-family: var(--font-base);
-    font-size: 5.625rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    line-height: 7.3125rem;
-    color: var(--color-golden);
-    margin: 1rem 0 2rem 0;
+.header {
+  @extend %app__wrapper;
+  @extend %section__padding;
+  background: var(--color-black);
+  min-height: auto !important;
+
+  .info {
+    @extend %app__wrapper_info;
+    h1 {
+      font-family: var(--font-base);
+      font-size: 5.625rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      line-height: 7.3125rem;
+      color: var(--color-golden);
+      margin: 1rem 0 2rem 0;
+    }
+
+    p {
+      @extend %p__opensans;
+      margin: 2rem 0;
+    }
+
+    button {
+      @extend %custom__button;
+    }
+  }
+
+  .img {
+    @extend %app__wrapper_img;
   }
 }
 
