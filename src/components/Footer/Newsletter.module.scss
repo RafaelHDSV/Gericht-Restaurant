@@ -1,3 +1,5 @@
+@import '../../App.module.scss';
+
 .newsletter {
   padding: 2rem 4rem;
   border: 1px solid var(--color-golden);
@@ -6,9 +8,18 @@
 
   .title {
     text-align: center;
+
+    h1 {
+      @extend %headtext__cormorant;
+    }
+
+    p {
+      @extend %p__opensans;
+    }
   }
 
   .newsletterInput {
+    @extend %flex__center;
     display: flex;
     flex-direction: row;
     margin-top: 3rem;
@@ -26,6 +37,7 @@
     }
 
     button {
+      @extend %custom__button;
       width: max-content;
     }
   }
