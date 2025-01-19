@@ -1,7 +1,27 @@
-.awards {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 3rem;
+@import '../../App.module.scss';
+
+.laurels {
+  @extend %app__bg;
+  @extend %app__wrapper;
+  @extend %section__padding;
+
+  .info {
+    @extend %app__wrapper_info;
+
+    h1 {
+      @extend %headtext__cormorant;
+    }
+
+    .awards {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 3rem;
+    }
+  }
+
+  .img {
+    @extend %app__wrapper_img;
+  }
 }
