@@ -13,7 +13,6 @@
   <img alt="Typescript language" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
   <img alt="Javascript language" src="https://img.shields.io/badge/Javascript-000?style=for-the-badge&logo=javascript" />
   <img alt="Sass language" src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
-  <img alt="HTML language" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/RafaelHDSV/Gericht-Restaurant?style=for-the-badge" />
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/RafaelHDSV/Gericht-Restaurant?style=for-the-badge" />
 </div>
