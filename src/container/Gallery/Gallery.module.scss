@@ -1,4 +1,7 @@
+@import '../../App.module.scss';
+
 .gallery {
+  @extend %flex__center;
   display: flex;
   flex-direction: row;
   background: var(--color-black);
@@ -13,7 +16,18 @@
     min-width: 500px;
     padding-right: 2rem;
 
+    h1 {
+      @extend %headtext__cormorant;
+    }
+
+    p {
+      @extend %p__opensans;
+      color: var(--color-grey);
+      margin-top: 2rem;
+    }
+
     button {
+      @extend %custom__button;
       margin-top: 1rem;
     }
   }
@@ -37,6 +51,7 @@
       }
 
       .imagesCard {
+        @extend %flex__center;
         position: relative;
         min-width: 301px;
         height: 447px;
@@ -61,7 +76,7 @@
 
         .instagramIcon {
           position: absolute;
-          color: #fff;
+          color: var(--color-white);
           font-size: 2rem;
           opacity: 0;
           transition: 0.5s all ease;

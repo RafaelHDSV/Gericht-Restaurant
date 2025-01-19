@@ -1,7 +1,6 @@
 import { useRef } from 'react'
 import SubHeading from '../../components/SubHeading/SubHeading'
 import images from '../../constants/images'
-import baseStyles from '../../App.module.scss'
 import styles from './Gallery.module.scss'
 import { ArrowLeft, ArrowRight, InstagramLogo } from '@phosphor-icons/react'
 
@@ -22,20 +21,18 @@ export default function Gallery() {
   const imagesArray = [images.gallery01, images.gallery02, images.gallery03, images.gallery04]
 
   return (
-    <div className={`${styles.gallery} ${baseStyles.flex__center}`}>
+    <div className={styles.gallery}>
       <div className={styles.content}>
         <SubHeading>Instagram</SubHeading>
-        <h1 className={baseStyles.headtext__cormorant}>Photo Gallery</h1>
-        <p className={baseStyles.p__opensans} style={{ color: '#AAA', marginTop: '2rem' }}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo laudantium, ex asperiores nostrum cupiditate temporibus quasi accusantium aperiam
-        </p>
-        <button className={baseStyles.custom__button}>View More</button>
+        <h1>Photo Gallery</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo laudantium, ex asperiores nostrum cupiditate temporibus quasi accusantium aperiam</p>
+        <button>View More</button>
       </div>
 
       <div className={styles.galleryImages}>
         <div className={styles.container} ref={scrollRef}>
           {imagesArray.map((image, index) => (
-            <div key={index} className={`${styles.imagesCard} ${baseStyles.flex__center}`}>
+            <div key={index} className={styles.imagesCard}>
               <img src={image} alt={`image${index}`} />
               <InstagramLogo className={styles.instagramIcon} />
             </div>
