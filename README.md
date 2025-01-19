@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+# Gericht Restaurant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React language](https://img.shields.io/badge/React-005CFE?style=for-the-badge&logo=react)
+![Typescript language](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Javascript language](https://img.shields.io/badge/Javascript-000?style=for-the-badge&logo=javascript)
+![Sass language](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![HTML language](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
-Currently, two official plugins are available:
+![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Gericht-Restaurant?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/Gericht-Restaurant?style=for-the-badge)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+    <img src="./public/assets/header.png" alt="header.png">
+</p>
 
-## Expanding the ESLint configuration
+<p align="center">
+    <a href="#about">Sobre |</a> 
+    <a href="#started">Primeiros passos</a> 
+    <a href="#routes">| App Routes</a> 
+</p>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<h2 id="about">📌 Sobre</h2>
 
-- Configure the top-level `parserOptions` property like this:
+**Gericht Restaurant** é uma aplicação UI/UX desenvolvida com ReactJS, focada na experiência de exploração gastronômica. O projeto se destaca por sua seção principal envolvente, visuais de alta qualidade, um menu rico e interativo, além de funcionalidades cativantes.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+<h2 id="started">🚀 Primeiros passos</h2>
+
+Foram utilizados duas bibliotecas a parte no repositório:
+
+- Phosphor Icons
+- Sass
+
+<h3>Clonar</h3>
+
+```bash
+git clone https://github.com/RafaelHDSV/Gericht-Restaurant.git
+yarn install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+<h3>Iniciar</h3>
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd Gericht-Restaurant
+yarn start
 ```
+
+<h2 id="routes">📍 Rotas da aplicação</h2>
+
+O projeto inteiro posso uma única rota, não sendo necessário o controle e manutenção de outras rotas na aplicação
+​
+| route | description  
+|----------------------|-----------------------------------------------------
+| <kbd>/</kbd> | página inicial
+
+<hr/>
+
+### route: <kbd>/</kbd>
+
+<img src="./public/assets/full-project.png"/>
