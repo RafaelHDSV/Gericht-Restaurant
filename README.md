@@ -2,7 +2,7 @@
   <h1>Gericht Restaurant</h1>
 </div>
 
-<div align="center">
+<div align="center" style='margin-bottom: 1rem'>
   <a href="#about">Sobre</a> |
   <a href="#started">Primeiros Passos</a> |
   <a href="#routes">Rotas</a>
@@ -21,8 +21,6 @@
   <img src="./public/assets/header.png" alt="Gericht Restaurant Header">
 </p>
 
----
-
 ## 📌 Sobre <a id="about"></a>
 
 **Gericht Restaurant** é uma aplicação de UI/UX desenvolvida com **ReactJS** que simula uma experiência imersiva de exploração gastronômica.  
@@ -30,8 +28,6 @@ Os destaques do projeto incluem:
 - Seção principal envolvente e visualmente rica.  
 - Design responsivo e moderno.  
 - Menu interativo com funcionalidades intuitivas.  
-
----
 
 ## 🚀 Primeiros Passos <a id="started"></a>
 
