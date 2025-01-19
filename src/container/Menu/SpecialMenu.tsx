@@ -2,19 +2,18 @@ import images from '../../constants/images'
 import data from '../../constants/data'
 import SubHeading from '../../components/SubHeading/SubHeading'
 import MenuItem from '../../components/Menuitem/MenuItem'
-import baseStyles from '../../App.module.scss'
 import styles from './SpecialMenu.module.scss'
 
 export default function SpecialMenu() {
   return (
-    <div id='menu' className={`${styles.specialMenu} ${baseStyles.flex__center} ${baseStyles.section__padding}`}>
+    <div id='menu' className={styles.specialMenu}>
       <div className={styles.title}>
         <SubHeading>Menu that fits you pallate</SubHeading>
-        <h1 className={baseStyles.headtext__cormorant}>Today's Special</h1>
+        <h1>Today's Special</h1>
       </div>
 
       <div className={styles.menu}>
-        <div className={`${styles.winesAndBeers} ${baseStyles.flex__center}`}>
+        <div className={styles.winesAndBeers}>
           <p className={styles.menuTitle}>Wine & Beer</p>
           <div className={styles.menuItem}>
             {data.wines.map((wineAndBeer, index) => (
@@ -38,7 +37,7 @@ export default function SpecialMenu() {
       </div>
 
       <div style={{ marginTop: '1rem' }}>
-        <button className={baseStyles.custom__button}>View More</button>
+        <button>View More</button>
       </div>
     </div>
   )
