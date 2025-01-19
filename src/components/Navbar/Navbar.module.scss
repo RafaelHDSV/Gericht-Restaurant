@@ -1,3 +1,5 @@
+@import '../../App.module.scss';
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -25,9 +27,13 @@
     align-items: center;
     list-style: none;
 
-    li:hover {
-      cursor: pointer;
-      color: var(--color-grey);
+    li {
+      @extend %p__opensans;
+
+      &:hover {
+        cursor: pointer;
+        color: var(--color-grey);
+      }
     }
   }
 
@@ -37,6 +43,7 @@
     gap: 1rem;
 
     a {
+      @extend %p__opensans;
       transition: all 0.5s ease;
 
       &:hover {
@@ -90,6 +97,7 @@
         height: 100%;
 
         li {
+          @extend %p__opensans;
           list-style: none;
           color: var(--color-golden);
           font-size: 2rem;

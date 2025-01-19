@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { ForkKnife, List } from '@phosphor-icons/react'
 import images from '../../constants/images'
-import baseStyles from '../../App.module.scss'
 import styles from './Navbar.module.scss'
 
 export default function Navbar() {
@@ -14,31 +13,27 @@ export default function Navbar() {
       </div>
 
       <ul className={styles.links}>
-        <li className={baseStyles.p__opensans}>
+        <li>
           <a href='#home'>Home</a>
         </li>
-        <li className={baseStyles.p__opensans}>
+        <li>
           <a href='#about'>About</a>
         </li>
-        <li className={baseStyles.p__opensans}>
+        <li>
           <a href='#menu'>Menu</a>
         </li>
-        <li className={baseStyles.p__opensans}>
+        <li>
           <a href='#awards'>Awards</a>
         </li>
-        <li className={baseStyles.p__opensans}>
+        <li>
           <a href='#contact'>Contact</a>
         </li>
       </ul>
 
       <div className={styles.actions}>
-        <a className={baseStyles.p__opensans} href='#login'>
-          Log In / Register
-        </a>
+        <a href='#login'>Log In / Register</a>
         <div className={styles.divider}></div>
-        <a className={baseStyles.p__opensans} href='/'>
-          Book Table
-        </a>
+        <a href='/'>Book Table</a>
       </div>
 
       <div className={styles.navbarSmallScreens} onClick={() => console.log('clicked')}>
@@ -48,19 +43,19 @@ export default function Navbar() {
           <div className={styles.navbarSmallScreensContent}>
             <ForkKnife onClick={() => setToggleMenu(prev => !prev)} size={26} className={styles.navbarSmallScreensClose} />
             <ul className={styles.linksSmallScreens}>
-              <li className={baseStyles.p__opensans}>
+              <li>
                 <a href='#home'>Home</a>
               </li>
-              <li className={baseStyles.p__opensans}>
+              <li>
                 <a href='#about'>About</a>
               </li>
-              <li className={baseStyles.p__opensans}>
+              <li>
                 <a href='#menu'>Menu</a>
               </li>
-              <li className={baseStyles.p__opensans}>
+              <li>
                 <a href='#awards'>Awards</a>
               </li>
-              <li className={baseStyles.p__opensans}>
+              <li>
                 <a href='#contact'>Contact</a>
               </li>
             </ul>
