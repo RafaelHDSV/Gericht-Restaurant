@@ -1,60 +1,69 @@
-<div>
- <h1 align="center">Gericht Restaurant</h1>
+<div align="center">
+  <h1>Gericht Restaurant</h1>
 </div>
 
-<ul align="center">
-    <a  href="#about">Sobre |</a> 
-    <a  href="#started">Primeiros passos</a> 
-    <a  href="#routes">| App Routes</a> 
-</ul>
+<div align="center">
+  <a href="#about">Sobre</a> |
+  <a href="#started">Primeiros Passos</a> |
+  <a href="#routes">Rotas</a>
+</div>
 
-![React language](https://img.shields.io/badge/React-005CFE?style=for-the-badge&logo=react)
-![Typescript language](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Javascript language](https://img.shields.io/badge/Javascript-000?style=for-the-badge&logo=javascript)
-![Sass language](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-![HTML language](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Gericht-Restaurant?style=for-the-badge)
-![GitHub repo size](https://img.shields.io/github/repo-size/RafaelHDSV/Gericht-Restaurant?style=for-the-badge)
+<div align="center">
+  <img alt="React language" src="https://img.shields.io/badge/React-005CFE?style=for-the-badge&logo=react" />
+  <img alt="Typescript language" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img alt="Javascript language" src="https://img.shields.io/badge/Javascript-000?style=for-the-badge&logo=javascript" />
+  <img alt="Sass language" src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
+  <img alt="HTML language" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/RafaelHDSV/Gericht-Restaurant?style=for-the-badge" />
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/RafaelHDSV/Gericht-Restaurant?style=for-the-badge" />
+</div>
 
 <p align="center">
-    <img src="./public/assets/header.png" alt="header.png">
+  <img src="./public/assets/header.png" alt="Gericht Restaurant Header">
 </p>
 
-<h2 id="about">📌 Sobre</h2>
+---
 
-**Gericht Restaurant** é uma aplicação UI/UX desenvolvida com ReactJS, focada na experiência de exploração gastronômica. O projeto se destaca por sua seção principal envolvente, visuais de alta qualidade, um menu rico e interativo, além de funcionalidades cativantes.
+## 📌 Sobre <a id="about"></a>
 
-<h2 id="started">🚀 Primeiros passos</h2>
+**Gericht Restaurant** é uma aplicação de UI/UX desenvolvida com **ReactJS** que simula uma experiência imersiva de exploração gastronômica.  
+Os destaques do projeto incluem:  
+- Seção principal envolvente e visualmente rica.  
+- Design responsivo e moderno.  
+- Menu interativo com funcionalidades intuitivas.  
 
-Foram utilizados duas bibliotecas a parte no repositório:
+---
 
-- Phosphor Icons
-- Sass
+## 🚀 Primeiros Passos <a id="started"></a>
 
-<h3>Clonar</h3>
+Este projeto utiliza as seguintes bibliotecas adicionais:  
+- **Phosphor Icons**: Para ícones elegantes e flexíveis.  
+- **Sass**: Para gerenciamento avançado de estilos.
+
+### Clone o repositório
 
 ```bash
 git clone https://github.com/RafaelHDSV/Gericht-Restaurant.git
+```
+
+### Instale as dependências
+```bash
 yarn install
 ```
 
-<h3>Iniciar</h3>
-
+### Inicie o projeto
 ```bash
 cd Gericht-Restaurant
 yarn start
 ```
 
-<h2 id="routes">📍 Rotas da aplicação</h2>
+## 📍 Rotas <a id="routes"></a>
+O projeto possui uma única rota, simplificando a navegação e manutenção:
 
-O projeto inteiro posso uma única rota, não sendo necessário o controle e manutenção de outras rotas na aplicação
-​
-| route | description  
-|----------------------|-----------------------------------------------------
-| <kbd>/</kbd> | página inicial
+| Rota | Descrição
+| ---|---
+| <kbd>/</kbd> |	Página inicial do projeto
 
-<hr/>
+### Visualização da página inicial
 
-### route: <kbd>/</kbd>
-
-<img src="./public/assets/full-project.png"/>
+<p align="center"> <img src="./public/assets/full-project.png" alt="Gericht Restaurant Full Project"> </p>
