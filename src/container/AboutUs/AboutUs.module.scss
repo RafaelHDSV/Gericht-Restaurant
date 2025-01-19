@@ -1,7 +1,13 @@
+@import '../../App.module.scss';
+
 .aboutContainer {
+  @extend %section__padding;
+  @extend %flex__center;
+  @extend %app__bg;
   position: relative;
 
   .aboutBackground {
+    @extend %flex__center;
     position: absolute;
     inset: 0;
 
@@ -12,6 +18,7 @@
   }
 
   .aboutContent {
+    @extend %flex__center;
     width: 100%;
     z-index: 9;
 
@@ -22,9 +29,26 @@
       justify-content: flex-end;
       align-items: flex-end;
       text-align: right;
+
+      h1 {
+        @extend %headtext__cormorant;
+      }
+
+      img {
+        @extend %spoon__img;
+      }
+
+      p {
+        @extend %p__opensans;
+      }
+
+      button {
+        @extend %custom__button;
+      }
     }
 
     .knife {
+      @extend %flex__center;
       margin: 2rem 4rem;
 
       img {
@@ -39,6 +63,22 @@
       justify-content: flex-start;
       align-items: flex-start;
       text-align: left;
+
+      h1 {
+        @extend %headtext__cormorant;
+      }
+
+      img {
+        @extend %spoon__img;
+      }
+
+      p {
+        @extend %p__opensans;
+      }
+
+      button {
+        @extend %custom__button;
+      }
     }
 
     .aboutLeftContainer,
