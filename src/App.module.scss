@@ -9,11 +9,12 @@
 }
 
 %app__bg {
-  background: url('src/assets/bg.png');
+  // background: url('src/assets/bg.png');
+  background: url('https://placehold.jp/150x150.png');
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
-  background-attachment: fixed;
+  background-attachment: fixedQ;
 }
 
 %app__wrapper {
