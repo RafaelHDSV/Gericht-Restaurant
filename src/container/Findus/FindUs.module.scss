@@ -1,0 +1,34 @@
+@import '../../App.module.scss';
+
+.contact {
+  @extend %app__bg;
+  @extend %app__wrapper;
+  @extend %section__padding;
+
+  .info {
+    @extend %app__wrapper_info;
+
+    h1 {
+      @extend %headtext__cormorant;
+      margin-bottom: 3rem;
+    }
+
+    p {
+      @extend %p__opensans;
+
+      &:nth-child(2) {
+        @extend %p__cormorant;
+        color: var(--color-golden);
+        margin: 2rem 0;
+      }
+    }
+
+    button {
+      @extend %custom__button;
+      margin-top: 2rem;
+    }
+  }
+  .img {
+    @extend %app__wrapper_img;
+  }
+}
