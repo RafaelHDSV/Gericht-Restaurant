@@ -1,50 +1,79 @@
-.content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-top: 5rem;
+@import '../../App.module.scss';
 
-  .quote {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
+.chef {
+  @extend %app__bg;
+  @extend %app__wrapper;
+  @extend %section__padding;
 
-    img {
-      width: 47px;
-      height: 40px;
-      margin: 0 1rem 1rem 0;
+  .chefImage {
+    @extend %app__wrapper_img;
+    @extend %app__wrapper_img-reverse;
+  }
+
+  .info {
+    @extend %app__wrapper_info;
+
+    h1 {
+      @extend %headtext__cormorant;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 5rem;
+
+      .quote {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        img {
+          width: 47px;
+          height: 40px;
+          margin: 0 1rem 1rem 0;
+        }
+      }
+
+      p {
+        @extend %p__opensans;
+      }
     }
   }
-}
 
-.sign {
-  width: 100%;
-  margin-top: 3rem;
-
-  p:first-child {
-    color: var(--color-golden);
-    font-family: var(--font-base);
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 41px;
-    letter-spacing: 0.04em;
-    text-transform: capitalize;
-  }
-
-  img {
+  .sign {
+    width: 100%;
     margin-top: 3rem;
-    width: 250px;
-  }
-}
 
-@media screen and (max-width: 2000px) {
-  .sign img {
-    width: 370px;
-  }
-}
+    p:first-child {
+      color: var(--color-golden);
+      font-family: var(--font-base);
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 41px;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+    }
 
-@media screen and (max-width: 450px) {
-  .sign img {
-    width: 80%;
+    p:last-child {
+      @extend %p__opensans;
+    }
+
+    img {
+      margin-top: 3rem;
+      width: 250px;
+    }
+  }
+
+  @media screen and (max-width: 2000px) {
+    .sign img {
+      width: 370px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .sign img {
+      width: 80%;
+    }
   }
 }
