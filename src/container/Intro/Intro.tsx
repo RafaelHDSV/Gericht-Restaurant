@@ -1,6 +1,5 @@
 import { useRef, useState } from 'react'
 import meal from '../../assets/meal.mp4'
-import baseStyles from '../../App.module.scss'
 import styles from './Intro.module.scss'
 import { Pause, Play } from '@phosphor-icons/react'
 
@@ -30,8 +29,8 @@ export default function Intro() {
       <video src={meal} ref={videoRef} typeof='video/mp4' loop controls={false} muted />
 
       {isControlsVisible && (
-        <div className={`${styles.overlay} ${baseStyles.flex__center}`} style={{ backgroundColor: isPlaying ? 'rgba(0, 0, 0, 0.3)' : 'rgba(0, 0, 0, 0.65)' }}>
-          <div className={`${styles.overlayCircle} ${baseStyles.flex__center}`} onClick={handleVideo}>
+        <div className={styles.overlay} style={{ backgroundColor: isPlaying ? 'rgba(0, 0, 0, 0.3)' : 'rgba(0, 0, 0, 0.65)' }}>
+          <div className={styles.overlayCircle} onClick={handleVideo}>
             {isPlaying ? <Pause color='#fff' size={82} /> : <Play color='#fff' size={82} />}
           </div>
         </div>
