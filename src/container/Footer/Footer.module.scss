@@ -1,4 +1,7 @@
+@import '../../App.module.scss';
+
 .footer {
+  @extend %section__padding;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -66,6 +69,10 @@
   .copyright {
     margin-top: 3rem;
     z-index: 1001;
+  }
+
+  p {
+    @extend %p__opensans;
   }
 }
 
